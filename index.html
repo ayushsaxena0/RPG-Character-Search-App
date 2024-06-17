@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPG Creature Search App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>RPG Creature Search App</h1>
+    <div class="main">
+      <div class="search">
+        <p>Search for Creature Name or ID:</p>
+        <input type="text" id="search-input" required autocomplete="off" />
+        <button id="search-button">Search</button>
+      </div>
+      <div class="info">
+        <div>
+          <p id="creature-name"></p>
+          <p id="creature-id"></p>
+        </div>
+        <div>
+          <p id="weight"></p>
+          <p id="height"></p>
+        </div>
+        <div id="types"></div>
+        <div class="special">
+          <p class="specialName"></p>
+          <p class="desc"></p>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="statName">
+          <p class="statHeading">Base</p>
+          <p>HP:</p>
+          <p>Attack:</p>
+          <p>Defense:</p>
+          <p>Sp. Attack:</p>
+          <p>Sp. Defense:</p>
+          <p>Speed:</p>
+        </div>
+        <div class="statValue">
+          <p class="statHeading">Stats</p>
+          <p id="hp"></p>
+          <p id="attack"></p>
+          <p id="defense"></p>
+          <p id="special-attack"></p>
+          <p id="special-defense"></p>
+          <p id="speed"></p>
+        </div>
+      </div>
+      <script src="js/main.js"></script>
+    </div>
+  </body>
+</html>
